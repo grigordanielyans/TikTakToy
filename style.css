@@ -1,201 +1,203 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
-
 body {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background: rgb(229, 229, 229);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(229, 229, 229);
 }
 
 .area {
-    margin: 6rem auto;
-    text-align: center;
+  margin: 6rem auto;
+  text-align: center;
 }
 
 .area .title {
-    font-size: 3rem;
-    color: rgb(1, 1, 90);
-    text-align: center;
-    padding: .6rem 1.4rem;
-    border-radius: .8rem;
+  font-size: 3rem;
+  color: rgb(1, 1, 90);
+  text-align: center;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.8rem;
 }
 
-
-.area .btnStart, .input_btn {
-    margin: 10rem auto;
-    border-radius: 1.2rem;
-    padding: 1.2rem 2rem;
-    font-size: 1.2rem;
-    border: none !important;
-    color: rgb(1, 1, 90);
-    cursor: pointer;
+.area .btnStart,
+.input_btn {
+  margin: 10rem auto;
+  border-radius: 1.2rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.2rem;
+  border: none !important;
+  color: rgb(1, 1, 90);
+  cursor: pointer;
 }
 
-
-.area .btnStart, .input_btn {
-    box-shadow: 0.5rem 0.5rem 1rem -10px black;
-    background-image: linear-gradient(45deg, #d8f7d5, #e4fde7)
+.area .btnStart,
+.input_btn {
+  box-shadow: 0.5rem 0.5rem 1rem -10px black;
+  background-image: linear-gradient(45deg, #d8f7d5, #e4fde7);
 }
 
-.area .btnStart:hover, .input_btn:hover {
-    box-shadow: inset 0.5rem 0.5rem 1rem -10px #787878;
+.area .btnStart:hover,
+.input_btn:hover {
+  box-shadow: inset 0.5rem 0.5rem 1rem -10px #787878;
+}
+
+.winner.active {
+  top: 0;
+  height: 100vh;
 }
 
 .control .btn_quit {
-    box-shadow: 0.5rem 0.5rem 1rem -10px black;
-    background-image: linear-gradient(45deg, #ff0000, #e3c3c3)
+  box-shadow: 0.5rem 0.5rem 1rem -10px black;
+  background-image: linear-gradient(45deg, #ff0000, #e3c3c3);
 }
 
 .control .btn_quit:hover {
-    box-shadow: inset 0.5rem 0.5rem 1rem -10px #787878;
+  box-shadow: inset 0.5rem 0.5rem 1rem -10px #787878;
 }
 
 .control .btn_restart {
-    box-shadow: 0.5rem 0.5rem 1rem -10px black;
-    background-image: linear-gradient(45deg, #26a0da, #b1cbd7)
+  box-shadow: 0.5rem 0.5rem 1rem -10px black;
+  background-image: linear-gradient(45deg, #26a0da, #b1cbd7);
 }
 
 .control .btn_restart:hover {
-    box-shadow: inset 0.5rem 0.5rem 1rem -10px #787878;
+  box-shadow: inset 0.5rem 0.5rem 1rem -10px #787878;
 }
 
 .area .modal {
-    position: absolute;
-    top: -120%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: absolute;
+  top: -120%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 label {
-    padding: .6rem;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-bottom: .2rem;
-    color: #fff;
+  padding: 0.6rem;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  color: #fff;
 }
-
 
 .area .modal.active {
-    top: 0;
-    height: 100vh;
+  top: 0;
+  height: 100vh;
 }
 
-
-.modal input[type=text] {
-    width: 55px;
-    padding: .6rem;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 1.4rem;
-    border-radius: .8rem;
-    color: rgb(1, 1, 90);
-    border: .1rem solid rgb(1, 1, 90);
+.modal input[type="text"] {
+  width: 55px;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  border-radius: 0.8rem;
+  color: rgb(1, 1, 90);
+  border: 0.1rem solid rgb(1, 1, 90);
 }
 
-.modal input[type=submit]:hover {
-    box-shadow: 0 -.3rem .5rem rgba(255, 255, 255, .3);
+.modal input[type="submit"]:hover {
+  box-shadow: 0 -0.3rem 0.5rem rgba(255, 255, 255, 0.3);
 }
-
 
 .block {
-    display: flex;
-    justify-content: center;
-    float: left;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border: .1rem solid rgb(1, 1, 90);
-    font-size: 2.5rem;
-    text-align: center;
-    color: rgb(1, 1, 90);
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 0.1rem solid rgb(1, 1, 90);
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(1, 1, 90);
 }
-
 
 .control {
-    position: absolute;
-    bottom: 3rem;
-    left: 41%;
+  position: absolute;
+  bottom: 3rem;
+  left: 41%;
 }
-
 
 .btn_restart,
 .btn_quit {
-    padding: .6rem 1.6rem;
-    font-size: 1.2rem;
-    margin: 0 .3rem;
-    box-shadow: 0 .1rem .2rem rgb(1, 1, 90);
-    color: #fff;
-    border-radius: 1.2rem;
-    cursor: pointer;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.2rem;
+  margin: 0 0.3rem;
+  box-shadow: 0 0.1rem 0.2rem rgb(1, 1, 90);
+  color: #fff;
+  border-radius: 1.2rem;
+  cursor: pointer;
 }
 
 .winner {
-    position: absolute;
-    top: -120%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: absolute;
+  top: -120%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 
 .winner h2 {
-    font-size: 2rem;
-    background: linear-gradient(#314755 0%,
-            #7fbfde 51%,
-            #314755 100%);
-    padding: 1.8rem 2.2rem;
-    margin: 2rem;
-    border-radius: 1.2rem;
-    color: rgb(1, 1, 90)
+  font-size: 2rem;
+  background: linear-gradient(#314755 0%, #7fbfde 51%, #314755 100%);
+  padding: 1.8rem 2.2rem;
+  margin: 2rem;
+  border-radius: 1.2rem;
+  color: rgb(1, 1, 90);
 }
-
-
 
 @media (max-width: 1200px) {
-    .control {
-        left: 10%;
-    }
+  .control {
+    left: 10%;
+  }
 }
-
 
 @media (max-width: 560px) {
-    .area .title {
-        font-size: 2, 4rem;
-    }
+  .area .title {
+    font-size: 2, 4rem;
+  }
 
-    label {
-        margin-top: 5rem;
-    }
+  label {
+    margin-top: 5rem;
+  }
 
-    .control {
-        bottom: 1rem;
-    }
+  .control {
+    bottom: 1rem;
+  }
 }
 
-
 @media (max-width: 360px) {
-    .area .title {
-        font-size: 2rem;
-    }
+  .area .title {
+    font-size: 2rem;
+  }
 
-    .area .btnStart {
-        font-size: 1rem;
-        padding: 1rem 1.8rem;
-    }
+  .area .btnStart {
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+  }
+}
+
+.block {
+  background: linear-gradient(
+    to bottom right,
+    #ffffff00 0%,
+    #acafff52 51%,
+    #1d37ff4d 100%
+  );
 }
